@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    prefer_const_constructors: error
+    prefer_const_literals_to_create_immutables: error
+    prefer_const_declarations: error
+
+    # 🔹 Buenas prácticas en nombres
+    constant_identifier_names: warning   # Constantes con mayúsculas: MY_CONSTANT
+    non_constant_identifier_names: error # Variables y métodos en lowerCamelCase
+    library_prefixes: warning
+    file_names: warning
