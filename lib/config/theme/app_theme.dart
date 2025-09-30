@@ -23,7 +23,10 @@ class AppTheme {
 
   ThemeData getTheme() => ThemeData(
     useMaterial3: true,
-    colorSchemeSeed: colorList[selectedColor]
+    colorSchemeSeed: colorList[selectedColor],
+    appBarTheme: const AppBarTheme(
+      centerTitle: false, // en Android viene no viene centrado por default
+    ),
   );
 }
  
