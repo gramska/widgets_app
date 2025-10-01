@@ -9,7 +9,7 @@ class ButtonsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Buttons Screen'),
       ),
-      body: Placeholder(),
+      body: const Placeholder(),
     );
   }
 }
