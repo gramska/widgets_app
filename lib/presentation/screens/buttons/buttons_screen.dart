@@ -99,6 +99,7 @@ class _BottonsView extends StatelessWidget {
                 iconColor: const WidgetStatePropertyAll(Colors.white)
               )
             ),
+            //* Boton personalizado
             const _CustomButton()
           ],
         ),
