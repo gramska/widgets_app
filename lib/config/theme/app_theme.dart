@@ -27,13 +27,17 @@ class AppTheme {
     useMaterial3: true,
     brightness: isDarkMode? Brightness.dark:Brightness.light,
     colorSchemeSeed: colorList[selectedColor],
-    // colorScheme: ColorScheme.fromSeed(
-    //     seedColor: colorList[selectedColor],
-    //     brightness: isDarkMode? Brightness.dark:Brightness.light,
-    //   ),
     appBarTheme: const AppBarTheme(
       centerTitle: false, // en Android viene no viene centrado por default
     ),
+  );
+
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDarkMode,
+  }) => AppTheme(
+    selectedColor: selectedColor ?? this.selectedColor,
+    isDarkMode: isDarkMode ?? this.isDarkMode
   );
 }
  
