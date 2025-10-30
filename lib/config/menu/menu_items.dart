@@ -16,6 +16,13 @@ class MenuItem {
 }
 
 const appMenuItems = <MenuItem>[
+
+    MenuItem(
+      title: 'Reverpod Counter', 
+      subtitle: 'Introducción a Reverpod', 
+      link: '/counter', 
+      icon: Icons.add_circle_outline_rounded
+    ),
     
     MenuItem(
       title: 'Botones', 
@@ -71,5 +78,12 @@ const appMenuItems = <MenuItem>[
       subtitle: 'Vistas infitas y refresh', 
       link: '/infinite', 
       icon: Icons.list_alt_rounded
+    ),
+
+    MenuItem(
+      title: 'cambiar tema', 
+      subtitle: 'Cambiar tema global de la aplicación', 
+      link: '/theme-changer', 
+      icon: Icons.color_lens_outlined
     )
   ];
